@@ -2,7 +2,7 @@
 # mzuca-capston
 This project is demonstrate a web application built with Node.js and can runn on a Docker container, it shows the application name, deployment status and enviroment on the webpage.
 # MZ-UCA Cloud Platform
-This app shows the MZ-UCA Cloud Platform name, its deployment status, and its environment. It uses the ENVIRONMENT setting to show the environment. It uses port 3000 by default. You can choose a different port with the `PORT` setting.
+This app shows the MZ-UCA Cloud Platform name, its deployment status, and its environment. It uses the ENVIRONMENT setting to show the environment. It uses port 3000.
 ## How the app works
 server.js runs a web server using Node.js.
 The app shows a web page with the app details.
@@ -23,7 +23,7 @@ docker run -d \
 ## Test results
 The Docker image built successfully.
 Port 8080 on your computer connects to port 3000 in the container.
-curl http://localhost:8080` showed the app name, `Deployment status: Successful`, and Environment: production.
+curl http://localhost:8080 showed the app name, `Deployment status: Successful`, and Environment: production.
 ## Problem exprerienced
 Another container was already using port 8080. Had to stop the running container before this one can use the same Port.
 ## Lessons learned
